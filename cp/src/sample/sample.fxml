@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button layoutX="409.0" layoutY="113.0" mnemonicParsing="false" onAction="#solve" text="Посчитать" />
+    <TextField alignment="CENTER" layoutX="18.0" layoutY="47.0" prefHeight="25.0" prefWidth="60.0" promptText="х1" fx:id="x11Field" />
+    <TextField alignment="CENTER" layoutX="115.0" layoutY="49.0" prefHeight="25.0" prefWidth="60.0" promptText="х2" fx:id="x12Field" />
+    <TextField alignment="CENTER" layoutX="214.0" layoutY="49.0" prefHeight="25.0" prefWidth="60.0" promptText="х3" fx:id="x13Field" />
+    <Label layoutX="420.0" layoutY="16.0" text="Точность" />
+    <Label layoutX="439.0" layoutY="62.0" text="10" />
+    <TextField fx:id="accuracyField" alignment="CENTER" layoutX="446.0" layoutY="37.0" prefHeight="25.0" prefWidth="28.0" promptText="1" text="1" />
+    <Label layoutX="434.0" layoutY="32.0" text="-">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <TextField alignment="CENTER" layoutX="18.0" layoutY="113.0" prefHeight="25.0" prefWidth="60.0" promptText="х1" fx:id="x21Field" />
+    <TextField alignment="CENTER" layoutX="115.0" layoutY="115.0" prefHeight="25.0" prefWidth="60.0" promptText="х2" fx:id="x22Field" />
+    <TextField alignment="CENTER" layoutX="214.0" layoutY="115.0" prefHeight="25.0" prefWidth="60.0" promptText="х3" fx:id="x23Field" />
+    <TextField alignment="CENTER" layoutX="18.0" layoutY="175.0" prefHeight="25.0" prefWidth="60.0" promptText="х1" fx:id="x31Field" />
+    <TextField alignment="CENTER" layoutX="115.0" layoutY="177.0" prefHeight="25.0" prefWidth="60.0" promptText="х2" fx:id="x32Field" />
+    <TextField alignment="CENTER" layoutX="214.0" layoutY="177.0" prefHeight="25.0" prefWidth="60.0" promptText="х3" fx:id="x33Field" />
+    <Label alignment="CENTER" layoutX="418.0" layoutY="167.0" text="Результат" />
+    <Label fx:id="resultx1Label" alignment="CENTER" layoutX="422.0" layoutY="186.0" text="0" />
+    <TextField fx:id="result1Field" alignment="CENTER" layoutX="317.0" layoutY="49.0" prefHeight="25.0" prefWidth="60.0" promptText="0" />
+    <TextField fx:id="result2Field" alignment="CENTER" layoutX="317.0" layoutY="115.0" prefHeight="25.0" prefWidth="60.0" promptText="0" />
+    <TextField fx:id="result3Field" alignment="CENTER" layoutX="317.0" layoutY="177.0" prefHeight="25.0" prefWidth="60.0" promptText="0" />
+    <Label fx:id="resultx2Label" alignment="CENTER" layoutX="422.0" layoutY="203.0" text="0" />
+    <Label fx:id="resultx3Label" alignment="CENTER" layoutX="422.0" layoutY="221.0" text="0" />
+    <Label layoutX="403.0" layoutY="186.0" text="x1" />
+    <Label layoutX="403.0" layoutY="203.0" prefWidth="13.0" text="x2" />
+    <Label layoutX="403.0" layoutY="221.0" text="x3" />
+    <Label fx:id="wrongData" layoutX="130.0" layoutY="211.0" text="Неверные данные" textFill="#b93232" visible="false">
+        <font>
+            <Font size="25.0" />
+        </font>
+    </Label>
+    <Label layoutX="41.0" layoutY="16.0" text="Х1" />
+    <Label layoutX="138.0" layoutY="16.0" text="Х2" />
+    <Label layoutX="237.0" layoutY="16.0" text="Х3" />
+</AnchorPane>
